@@ -12,7 +12,7 @@ CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}})  # allow fron
 db = pymysql.connect(
     host="localhost",
     user="root",
-    password="Sairam@151018",
+    password="****",
     database="feedbackapp"
 )
 cursor = db.cursor(pymysql.cursors.DictCursor)
@@ -98,7 +98,7 @@ def show_feedback():
         conn = pymysql.connect(
             host="localhost",
             user="root",
-            password="Sairam@151018",
+            password="****",
             database="feedbackapp",
             cursorclass=pymysql.cursors.DictCursor  # returns dict instead of tuple
         )
@@ -212,3 +212,4 @@ def admin_login():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
