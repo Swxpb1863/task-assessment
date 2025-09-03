@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather");
+/* Wrapper for page */
+.home-wrapper {
+  font-family: "Merriweather";
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Header styles */
+.home-header {
+  background: #2f3020;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.app-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #F7E6CA;
+  margin: 0;
+}
+
+/* Main split container */
+.home-container {
+  display: flex;
+  flex: 1;
+  width: 100%;
+}
+
+/* Shared section styles */
+.home-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.home-section:hover {
+  opacity: 0.9;
+}
+
+/* Center content inside each section */
+.content-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Left section (Customer Login) */
+.left-section {
+  background: #F7E6CA;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+}
+/* Right section (Admin Login) */
+.right-section {
+  background: linear-gradient(to right, #d96846, #596235);
+}
+
+/* Title styles inside sections */
+.home-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Gradient text for Customer Login */
+.gradient-text {
+  background: linear-gradient(to right, #d96846, #596235);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* White text for Admin Login */
+.white-text {
+  color: #F7E6CA;
+}

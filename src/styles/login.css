@@ -1,0 +1,126 @@
+/* Shared login container styles */
+@import url("https://fonts.googleapis.com/css?family=Merriweather");
+.login-container {
+  font-family: "Merriweather";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Shared box styles */
+.login-box{
+  background-color: #fff;
+  width: 40rem;
+  padding: 30px;
+  border-radius: 1px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* adds spacing between email & password */
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+label{
+    text-align: left;
+    align-items: left;
+}
+.input-group input:focus {
+  border-color: #d96846;
+}
+
+/* Shared button styles */
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.signup-link {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* ---------------- CUSTOMER LOGIN ---------------- */
+.customer-login {
+  background: #F7E6CA; /* Cream background */
+}
+
+.customer-box {
+  background: white;
+  color: #2f3020;
+}
+
+.customer-box button {
+  background: linear-gradient(to right, #d96846, #596235);
+  color: #fff;
+}
+
+.signup-text {
+  margin-top: 15px;
+  color: #2f3020;
+}
+
+.signup-link {
+  color: #d96846;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.signup-link:hover {
+  color: #596235;
+}
+
+/* ---------------- ADMIN LOGIN ---------------- */
+.admin-login {
+  background: linear-gradient(to right, #d96846, #596235); /* Gradient background */
+}
+
+.admin-box {
+  background: white;
+  color: black;
+}
+
+.admin-box input {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border: none;
+}
+
+.admin-box input::placeholder {
+  color: #ddd;
+}
+
+.admin-login-btn {
+  background: #596235;
+  color: #fff;
+}
